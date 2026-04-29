@@ -2,7 +2,7 @@ import React from 'react'
 import { Routes,Route } from 'react-router-dom';
 import Navbar from './Components/Navbar'
 import Home from './Pages/Home';
-import MarketplaceSection from './Pages/MarketPlaceSection';
+import MarketplaceSection from './Pages/MarketplaceSection';
 import SolutionPage from './Pages/SolutionPage';
 import ScrollToTop from './Components/ScrollToTop';
 import CursorCircle from './Components/CursorCircle';

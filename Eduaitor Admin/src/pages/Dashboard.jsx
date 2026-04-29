@@ -17,7 +17,7 @@ const STATS = [
     icon: <FaUsers />,
   },
   {
-    label: "Programs",
+    label: "Demos",
     value: "34",
     change: "+3",
     up: true,
@@ -41,7 +41,7 @@ const STATS = [
 
 const ACTIVITY = [
   { action: "New user registered", time: "2 min ago" },
-  { action: "Program 'React Basics' updated", time: "14 min ago" },
+  { action: "Demo 'React Basics' updated", time: "14 min ago" },
   { action: "Contact form submission", time: "1 hr ago" },
   { action: "Gallery image uploaded", time: "3 hr ago" },
   { action: "Blog post published", time: "5 hr ago" },
@@ -49,7 +49,7 @@ const ACTIVITY = [
 ];
 
 const QUICK_LINKS = [
-  { label: "Add Program", path: "/admin/program" },
+  { label: "View Demo Booking", path: "/admin/demo" },
   { label: "View Contacts", path: "/admin/contact" },
   { label: "Upload Image", path: "/admin/gallery" },
   { label: "New Blog", path: "/admin/blog" },
@@ -60,7 +60,7 @@ export default function Dashboard() {
     <div className="p-5 lg:p-8 space-y-8 max-w-7xl mx-auto w-full t-base">
       {/* Header */}
       <div>
-        <h1 className="text-2xl font-black tracking-tight t-text">Dashboard</h1>
+        <h1 className="text-2xl font-black tracking-tight t-text">Dashboard   (DEMO Hard Coded)</h1>
         <p className="text-sm mt-1 t-text-sec">
           {new Date().toLocaleDateString("en-US", {
             weekday: "long",

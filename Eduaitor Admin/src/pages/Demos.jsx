@@ -381,7 +381,7 @@ export default function Demos() {
 
       {/* Stats */}
       <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3">
-        <StatCard label="Total" value={stats?.total} color="text-white" />
+        <StatCard label="Total" value={stats?.total} color="text-purple-500" />
         <StatCard
           label="Pending"
           value={stats?.pending}
