@@ -1,9 +1,9 @@
 import React from "react";
-import "./MarketPlaceSection.css";
+import "./MarketPlace.css";
 import FaqSection from "../Components/MarketPlace-components/Faqsection";
 import { NavLink } from "react-router-dom";
 
-const MarketPlaceSection = () => {
+const MarketPlace = () => {
     const faqs = [
       {
         question: "What are add-ons?",
@@ -152,4 +152,4 @@ const MarketPlaceSection = () => {
     );
 };
 
-export default MarketplaceSection;
+export default Marketplace;

@@ -2,7 +2,6 @@ import React from 'react'
 import { Routes,Route } from 'react-router-dom';
 import Navbar from './Components/Navbar'
 import Home from './Pages/Home';
-import MarketplaceSection from './Pages/MarketPlaceSection';
 import SolutionPage from './Pages/SolutionPage';
 import ScrollToTop from './Components/ScrollToTop';
 import CursorCircle from './Components/CursorCircle';
@@ -12,6 +11,7 @@ import ContactUs from './Pages/ContactUs';
 import LoginSignup from './Pages/LoginSignup';
 import Footer from './Components/footer/Footer';
 import BookDemoPage from './Pages/BookDemoPage';
+import Marketplace from './Pages/MarketPlace';
 
 const App = () => {
   return (
@@ -23,7 +23,7 @@ const App = () => {
    <Routes>
         <Route path='/'  element={<Home/>}/>
         <Route path='/solution'  element={<SolutionPage />}/>
-        <Route path='/marketplace' element={<MarketplaceSection />} />
+        <Route path='/marketplace' element={<Marketplace />} />
         {/* <Route path='/bookademo' element={<BookDemo />} /> */}
         <Route path='/plans' element={<Plans />} />
         <Route path='/aboutus' element={<AboutUs />} />
