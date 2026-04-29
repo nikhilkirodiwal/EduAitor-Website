@@ -152,4 +152,4 @@ const MarketPlace = () => {
     );
 };
 
-export default Marketplace;
+export default MarketPlace;
