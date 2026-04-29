@@ -1,5 +1,5 @@
 import Demo from "../models/demo.js";
-import { sendUserConfirmation, sendAdminNotification } from "../utils/mailer.js";
+import { sendUserConfirmation, sendAdminNotification } from "../utils/Mailer.js";
 
 // ── POST /api/demo/book  (public) ────────────────────────────
 export const bookDemo = async (req, res) => {

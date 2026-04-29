@@ -16,7 +16,8 @@ connectDB();
 
 /* ─── MIDDLEWARE ─── */
 const allowedOrigins = [
-    process.env.CLIENT_URL,
+    process.env.CLIENT_URL_1,
+    process.env.CLIENT_URL_2,
     "http://localhost:5173",
     "http://localhost:5174"
 ].filter(Boolean); // .filter(Boolean) removes undefined if CLIENT_URL isn't set
