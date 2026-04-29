@@ -1,9 +1,9 @@
 import React from "react";
-import "./MarketplaceSection.css";
+import "./MarketPlaceSection.css";
 import FaqSection from "../Components/MarketPlace-components/Faqsection";
 import { NavLink } from "react-router-dom";
 
-const MarketplaceSection = () => {
+const MarketPlaceSection = () => {
     const faqs = [
       {
         question: "What are add-ons?",
