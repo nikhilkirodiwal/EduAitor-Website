@@ -1,0 +1,231 @@
+/* ── ERP SECTION ─────────────────────────── */
+.erp {
+  position: relative;
+  padding: 110px 7%;
+  background: linear-gradient(170deg, #0d0014 0%, #1e0040 60%, #2d0060 100%);
+  overflow: hidden;
+}
+
+.erp__bg-shape {
+  position: absolute;
+  width: 700px; height: 700px;
+  border-radius: 50%;
+  background: radial-gradient(ellipse, rgba(147,51,234,0.2) 0%, transparent 70%);
+  top: -200px; right: -150px;
+  pointer-events: none;
+}
+
+.erp__inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header */
+.erp__header {
+  text-align: center;
+  max-width: 680px;
+  margin: 0 auto 60px;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+.erp__header--show { opacity: 1; transform: translateY(0); }
+
+.erp__label {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--purple-400);
+  margin-bottom: 14px;
+  padding: 5px 14px;
+  border-radius: 100px;
+  background: rgba(192, 132, 252, 0.12);
+  border: 1px solid rgba(192, 132, 252, 0.25);
+}
+
+.erp__h2 {
+  font-family: var(--font-display);
+  font-size: clamp(28px, 4vw, 46px);
+  font-weight: 800;
+  color: #fff;
+  line-height: 1.15;
+  margin-bottom: 18px;
+  letter-spacing: -0.5px;
+}
+.erp__h2 span {
+  background: linear-gradient(135deg, #c084fc, #a855f7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.erp__sub {
+  font-size: 16px;
+  color: rgba(255,255,255,0.55);
+  line-height: 1.75;
+}
+
+/* Tabs */
+.erp__tabs {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 48px;
+}
+
+.erp__tab {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 22px;
+  border-radius: 100px;
+  border: 1.5px solid rgba(255,255,255,0.12);
+  background: rgba(255,255,255,0.05);
+  color: rgba(255,255,255,0.55);
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  backdrop-filter: blur(8px);
+}
+.erp__tab:hover {
+  border-color: rgba(192,132,252,0.4);
+  color: #fff;
+  background: rgba(147,51,234,0.12);
+}
+.erp__tab--active {
+  background: var(--purple-600);
+  border-color: var(--purple-600);
+  color: #fff;
+  box-shadow: 0 4px 20px rgba(147,51,234,0.4);
+}
+.erp__tab-icon { display: flex; }
+
+/* Panel */
+.erp__panel {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 24px;
+  padding: 50px 40px;
+  backdrop-filter: blur(12px);
+  animation: panel-in 0.4s ease both;
+}
+@keyframes panel-in {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ── ERP Inner Layout (shared by StudentInfo / FeeManagement / Analytics) */
+.erp-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 70px;
+  align-items: center;
+}
+
+.erp-left h3 {
+  font-family: var(--font-display);
+  font-size: clamp(22px, 3vw, 34px);
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 16px;
+  line-height: 1.25;
+}
+.erp-left p {
+  font-size: 16px;
+  color: rgba(255,255,255,0.55);
+  line-height: 1.75;
+  margin-bottom: 28px;
+}
+
+/* Feature checklist */
+.erp-features {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 32px;
+}
+.erp-features li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  color: rgba(255,255,255,0.7);
+}
+.erp-features li::before {
+  content: '';
+  width: 18px; height: 18px;
+  border-radius: 50%;
+  background: rgba(147,51,234,0.3);
+  border: 1px solid rgba(147,51,234,0.5);
+  flex-shrink: 0;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23a855f7' stroke-width='3'%3E%3Cpolyline points='20 6 9 17 4 12'/%3E%3C/svg%3E");
+  background-size: 10px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.view-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 13px 26px;
+  background: var(--purple-600);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: var(--font-body);
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.25s ease;
+  box-shadow: 0 4px 16px rgba(147,51,234,0.35);
+}
+.view-btn:hover {
+  background: var(--purple-700);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(147,51,234,0.5);
+}
+
+/* Right image with glass hover */
+.erp-right { display: flex; justify-content: center; }
+.erp-img-wrap {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+}
+.erp-img-wrap img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 16px;
+  display: block;
+  transition: transform 0.6s ease;
+}
+.erp-img-wrap:hover img { transform: scale(1.03); }
+.erp-img-wrap::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 16px;
+  border: 1px solid rgba(192,132,252,0.2);
+  box-shadow: inset 0 0 60px rgba(147,51,234,0.1);
+  pointer-events: none;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .erp-wrapper { grid-template-columns: 1fr; gap: 40px; text-align: center; }
+  .erp-features li { justify-content: center; }
+  .erp__panel { padding: 32px 20px; }
+}
+@media (max-width: 600px) {
+  .erp { padding: 80px 5%; }
+  .erp__tabs { flex-direction: column; align-items: stretch; }
+  .erp__tab { justify-content: center; border-radius: 10px; }
+}

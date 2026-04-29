@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html,body{
+  /* height: 100%; */
+  width: 100%;
+  overflow-x: hidden;
+}
+
+
+.main-content{
+  padding-top: 30px;
+}
+:root {
+  /* ── Purple Palette ── */
+  --purple-50:  #faf5ff;
+  --purple-100: #f3e8ff;
+  --purple-200: #e9d5ff;
+  --purple-400: #c084fc;
+  --purple-500: #a855f7;
+  --purple-600: #9333ea;
+  --purple-700: #7e22ce;
+  --purple-800: #6b21a8;
+  --purple-900: #3b0764;
+  --purple-950: #2e0650;
+
+  /* ── Brand Tokens ── */
+  --primary:        var(--purple-600);
+  --primary-hover:  var(--purple-700);
+  --bg-color:       var(--purple-50);
+
+  /* ── Shared Dims & Glows ── */
+  --purple-dim:   rgba(147, 51, 234, 0.12);
+  --purple-glow:  rgba(147, 51, 234, 0.35);
+  --border-glow:  rgba(147, 51, 234, 0.3);
+  --border-md:    rgba(147, 51, 234, 0.2);
+
+  /* ── Radii & Motion ── */
+  --radius-sm: 10px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-xl: 32px;
+  --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --ease-out:    cubic-bezier(0.22, 1, 0.36, 1);
+
+  /* ── LIGHT theme defaults (Home page) ── */
+  --ink:      #0d0d14;
+  --surface:  #ffffff;
+  --border:   rgba(147, 51, 234, 0.12);
+  --text-1:   #0f0f1a;
+  --text-2:   #4b5563;
+  --text-3:   #9ca3af;
+
+  /* ── Fonts ── */
+  --font-display: 'Sora', sans-serif;
+  --font-body:    'Plus Jakarta Sans', sans-serif;
+
+  /* ── Accents (Solution page extras) ── */
+  --teal: #00C9A7;
+  --gold: #F7C948;
+  --red:  #FF6B6B;
+}

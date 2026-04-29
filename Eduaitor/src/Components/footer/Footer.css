@@ -1,0 +1,321 @@
+/* Import Poppins Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* Footer Styles */
+.footer {
+  background-color: #e8eef3;
+  padding: 60px 20px 20px;
+  font-family: 'Poppins', sans-serif;
+  color: #5a6c7d;
+  position: relative;
+}
+
+.footer-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.5fr 1.2fr 0.8fr 0.8fr;
+  gap: 50px;
+  padding: 0 20px;
+}
+
+/* Brand Section */
+.footer-brand {
+  padding-right: 40px;
+}
+
+.logo {
+  height: 80px; /* Reduced from 90px to fit comfortably in a 12vh navbar */
+  width: auto;
+  object-fit: contain;
+  display: block;
+}
+
+.brand-description {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #6b7280;
+  margin-bottom: 30px;
+}
+
+/* Social Icons */
+.social-icons {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 40px;
+}
+
+.social-link {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #5a6c7d;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.social-link:hover {
+  background-color: #7b4dc4;
+  color: #fff;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(59, 130, 246, 0.3);
+}
+
+.social-link i {
+  font-size: 18px;
+}
+
+/* App Download Section */
+.app-download {
+  margin-top: 30px;
+}
+
+.download-title {
+  font-size: 16px;
+  font-weight: 500;
+  color: #4b5563;
+  margin-bottom: 20px;
+}
+
+.download-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.app-button {
+  display: inline-block;
+  width: fit-content;
+  transition: transform 0.3s ease;
+}
+
+.app-button:hover {
+  transform: translateY(-2px);
+}
+
+.app-button img {
+  height: 50px;
+  width: auto;
+  display: block;
+}
+
+/* Footer Columns */
+.footer-column {
+  min-width: 0;
+}
+
+.column-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #7b4dc4;
+  margin: 0 0 25px 0;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin-bottom: 14px;
+}
+
+.footer-links a {
+  color: #6b7280;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 1.6;
+  transition: color 0.3s ease, padding-left 0.3s ease;
+  display: inline-block;
+}
+
+.footer-links a:hover {
+  color: #7b4dc4;
+  padding-left: 5px;
+}
+
+/* Scroll to Top Button */
+.scroll-top-btn {
+  position: fixed;
+  bottom: 40px;
+  left: 40px;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background-color: #7b4dc4;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 15px rgba(59, 130, 246, 0.4);
+  transition: all 0.3s ease;
+  z-index: 1000;
+}
+
+.scroll-top-btn:hover {
+  background-color: #5b2ea3;
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(59, 130, 246, 0.5);
+}
+
+.scroll-top-btn i {
+  font-size: 20px;
+}
+
+/* Tablet Styles */
+@media (max-width: 1024px) {
+  .footer-container {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+
+  .footer-brand {
+    grid-column: 1 / -1;
+    padding-right: 0;
+    max-width: 600px;
+  }
+
+  .social-icons {
+    margin-bottom: 30px;
+  }
+
+  .download-buttons {
+    flex-direction: row;
+    gap: 15px;
+  }
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .footer {
+    padding: 40px 15px 20px;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 35px;
+    padding: 0 10px;
+  }
+
+  .footer-brand {
+    text-align: left;
+  }
+
+  .brand-title {
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
+
+  .brand-description {
+    font-size: 14px;
+    margin-bottom: 25px;
+  }
+
+  .social-icons {
+    justify-content: flex-start;
+    margin-bottom: 25px;
+  }
+
+  .download-title {
+    font-size: 15px;
+    margin-bottom: 15px;
+  }
+
+  .download-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .app-button img {
+    height: 45px;
+  }
+
+  .column-title {
+    font-size: 17px;
+    margin-bottom: 20px;
+  }
+
+  .footer-links li {
+    margin-bottom: 12px;
+  }
+
+  .footer-links a {
+    font-size: 13px;
+  }
+
+  .scroll-top-btn {
+    width: 50px;
+    height: 50px;
+    bottom: 30px;
+    left: 30px;
+  }
+
+  .scroll-top-btn i {
+    font-size: 18px;
+  }
+}
+
+/* Small Mobile Styles */
+@media (max-width: 480px) {
+  .footer {
+    padding: 30px 10px 15px;
+  }
+
+  .brand-title {
+    font-size: 24px;
+  }
+
+  .brand-description {
+    font-size: 13px;
+  }
+
+  .social-link {
+    width: 36px;
+    height: 36px;
+  }
+
+  .social-link i {
+    font-size: 16px;
+  }
+
+  .app-button img {
+    height: 40px;
+  }
+
+  .scroll-top-btn {
+    width: 45px;
+    height: 45px;
+    bottom: 20px;
+    left: 20px;
+  }
+
+  .scroll-top-btn i {
+    font-size: 16px;
+  }
+}
+
+/* Accessibility */
+.scroll-top-btn:focus,
+.social-link:focus {
+  outline: 2px solid #7b4dc4;
+  outline-offset: 2px;
+}
+
+/* Print Styles */
+@media print {
+  .footer {
+    background-color: #fff;
+  }
+
+  .scroll-top-btn {
+    display: none;
+  }
+}

@@ -1,0 +1,138 @@
+.success-story {
+  min-height: 100vh;
+  background: linear-gradient(to bottom right, #ffffff, #f4f6fa);
+  display: flex;
+  align-items: center;
+  padding: 80px 8%;
+}
+
+.success-container {
+  max-width: 1400px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+/* TEXT SIDE */
+.success-text .tag {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #7b4dc4;
+  letter-spacing: 1px;
+}
+
+.success-text h2 {
+  font-size: 42px;
+  margin: 20px 0;
+  line-height: 1.2;
+  color: #111;
+}
+
+.success-text h2 span {
+  color: #7b4dc4;
+}
+
+.quote {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.description {
+  color: #555;
+  line-height: 1.7;
+  margin-bottom: 30px;
+}
+
+/* STATS */
+.success-stats {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 30px;
+}
+
+.success-stats h3 {
+  font-size: 28px;
+  color: #7b4dc4;
+}
+
+.success-stats p {
+  font-size: 14px;
+  color: #555;
+}
+
+/* BUTTON */
+.success-btn {
+  padding: 14px 30px;
+  background: #111;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.success-btn:hover {
+  background: #7b4dc4;
+}
+
+/* IMAGE SIDE */
+.success-image {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.success-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.image-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top right,
+    rgba(37, 99, 235, 0.2),
+    transparent
+  );
+}
+
+/* ========================= */
+/* RESPONSIVE */
+/* ========================= */
+
+@media (max-width: 1024px) {
+  .success-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .success-stats {
+    justify-content: center;
+  }
+
+  .success-text h2 {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 600px) {
+  .success-story {
+    padding: 60px 20px;
+  }
+
+  .success-text h2 {
+    font-size: 26px;
+  }
+
+  .success-stats {
+    flex-direction: column;
+    gap: 20px;
+  }
+}

@@ -1,0 +1,215 @@
+/* ROOT WRAPPER */
+.pricing-page {
+  background: #ffffff;
+  color: #111;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* ================= HEADER ================= */
+
+.pricing-page .pricing-header {
+  text-align: center;
+  padding: 100px 20px 60px;
+}
+
+.pricing-page .pricing-header h1 {
+  font-size: 2.8rem;
+  color: #111;
+}
+
+.pricing-page .pricing-header span {
+  color: #7b4dc4;
+}
+
+.pricing-page .pricing-header p {
+  margin-top: 15px;
+  color: #555;
+}
+
+/* ================= PLAN CARDS ================= */
+
+.pricing-page .plans-section {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  padding: 40px 20px 80px;
+}
+
+.pricing-page .plan-card {
+  width: 320px;
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 30px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+  transition: 0.3s;
+}
+
+.pricing-page .plan-card:hover {
+  transform: translateY(-8px);
+}
+
+.pricing-page .highlighted {
+  border: 2px solid #7b4dc4;
+}
+
+.pricing-page .plan-card h2 {
+  color: #7b4dc4;
+  font-size: 1.8rem;
+}
+
+.pricing-page .plan-desc {
+  margin: 15px 0;
+  color: #555;
+}
+
+.pricing-page .plans-section .demo-btn {
+  width: 100%;
+  padding: 12px;
+  background: #7b4dc4;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.pricing-page .plans-section .demo-btn:hover {
+  background: #7b4dc4;
+}
+
+/* ================= FEATURES ================= */
+
+.pricing-page .feature-highlight {
+  padding: 120px 20px;
+  background: linear-gradient(135deg, #f0f7ff, #e0edff);
+}
+
+.pricing-page .feature-container {
+  max-width: 1100px;
+  margin: auto;
+  text-align: center;
+}
+
+.pricing-page .feature-sub {
+  color: #555;
+  margin-bottom: 60px;
+}
+
+.pricing-page .feature-grid {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.pricing-page .feature-card {
+  width: 300px;
+  background: #ffffff;
+  padding: 40px 25px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(37, 99, 235, 0.1);
+  transition: 0.3s;
+  border: 1px solid #e5e7eb;
+  display: flex;
+  flex-direction: column;
+}
+
+.pricing-page .feature-card .feature-icon-title {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  gap: 20px;
+}
+
+.pricing-page .feature-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(37, 99, 235, 0.2);
+}
+
+.pricing-page .icon-circle {
+  background: #7b4dc4;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+  font-size: 1.5rem;
+  padding: 5px;
+}
+
+/* ================= COMPARISON ================= */
+
+.pricing-page .comparison-section {
+  padding: 120px 20px;
+  background: linear-gradient(180deg, #ffffff, #f8fbff);
+}
+
+.pricing-page .comparison-container {
+  max-width: 1100px;
+  margin: auto;
+  text-align: center;
+}
+
+.pricing-page .comparison-sub {
+  margin-bottom: 50px;
+  color: #555;
+}
+
+.pricing-page .comparison-table {
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+}
+
+.pricing-page .row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 18px;
+  border-bottom: 1px solid #f1f5f9;
+  transition: 0.2s;
+}
+
+.pricing-page .row:hover {
+  background: #111;
+  color: #fff;
+}
+
+.pricing-page .header {
+  background: #7b4dc4;
+  color: white;
+  font-weight: 600;
+}
+
+.pricing-page .check {
+  color: #7b4dc4;
+  font-weight: bold;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 768px) {
+
+  .pricing-page .pricing-header h1 {
+    font-size: 2rem;
+  }
+
+  .pricing-page .plan-card {
+    width: 100%;
+  }
+
+  .pricing-page .feature-card {
+    width: 100%;
+  }
+
+  .pricing-page .comparison-table {
+    overflow-x: auto;
+  }
+
+  .pricing-page .row {
+    min-width: 600px;
+  }
+}
