@@ -13,7 +13,6 @@ import LoginSignup from './Pages/LoginSignup';
 import Footer from './Components/footer/Footer';
 import BookDemoPage from './Pages/BookDemoPage';
 
-
 const App = () => {
   return (
    <>
