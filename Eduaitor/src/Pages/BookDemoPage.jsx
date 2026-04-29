@@ -3,7 +3,7 @@ import "./BookDemoPage.css";
 import Faqsection from "../Components/MarketPlace-components/Faqsection";
 import axios from "axios";
 
-const API = import.meta.env.VITE_API_URL || "http://localhost:5000/api"; // e.g. http://localhost:5000/api
+const API = import.meta.env.VITE_API_URL || "https://eduaitor-website.onrender.com/api"; // e.g. http://localhost:5000/api
 
 const BookDemoPage = () => {
   const [formData, setFormData] = useState({
